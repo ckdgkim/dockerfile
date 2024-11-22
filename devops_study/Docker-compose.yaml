@@ -1,0 +1,13 @@
+version: '3.6'
+
+services:
+  springdemo:
+    image: ckdgkim/springapp:jre17
+    # dockerhub 에서 경량화 시킨 springapp image 가져오기
+    ports:
+      - 8080:8080
+  web:
+    image: ckdgkim/mynginx:v2.0
+    # dockerhub에서 경량화시킨 nginx image 가져오기
+    ports:
+      - 80:80

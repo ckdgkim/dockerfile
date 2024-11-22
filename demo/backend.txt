@@ -1,0 +1,23 @@
+backend
+
+./gradlew clean build           
+
+docker pull jarrydms/backendproject:latest
+
+
+
+[ec2-user@ip-172-31-0-43 ~]$ docker images
+REPOSITORY                TAG       IMAGE ID       CREATED          SIZE
+jarrydms/backendproject   latest    87e73ca07cee   43 minutes ago   346MB
+
+
+ec2-user@ip-172-31-0-43 ~]$ docker images
+REPOSITORY                TAG       IMAGE ID       CREATED          SIZE
+jarrydms/backendproject   latest    87e73ca07cee   58 minutes ago   346MB
+[ec2-user@ip-172-31-0-43 ~]$ sudo docker run -p 8080:8080 jarrydms/backendproject:latest
+
+
+
+
+
+
